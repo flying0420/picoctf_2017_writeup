@@ -22,3 +22,11 @@ Now, to hex it, we can simply use `xxd`, the wondertool~
     cc76ae5c1b19d06897338d2deaa50bf00a
 
 Therefore, the flag is `cc76ae5c1b19d06897338d2deaa50bf00a`.
+
+
+Updated on 9th Jan 2018
+If there are several ":" mark in the raw you get, this code will not work, please use below 
+
+    $ /problems/45f3b0abcf176b7cf7c1536b28d05d72/raw2hex | cut -b 13- | xxd -plain
+
+End of update.
